@@ -171,12 +171,13 @@ h1 > span {
   display: grid;
 }
 
-@media (min-width: 55em) {
+@media (min-width: 60em) {
   body {
     text-align: left;
   }
   .container {
-    margin: 20em;
+    margin: 0 20em;
+    margin-top: 10em;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -187,7 +188,7 @@ h1 > span {
 
   .intro {
     margin: 0 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
     margin-top: 1.5rem;
   }
 
