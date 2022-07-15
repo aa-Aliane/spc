@@ -107,7 +107,6 @@ body {
   display: grid;
 }
 main {
-  
   gap: 3rem;
   margin-top: 3rem;
 }
@@ -115,6 +114,9 @@ main {
 .logo {
   position: relative;
   border-radius: 1rem;
+  background-image: url(images/image-header-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .logo::before {
   position: absolute;
@@ -131,6 +133,7 @@ main {
 img {
   border-radius: 1rem 1rem 0 0;
   z-index: 1;
+  visibility: hidden;
 }
 
 h1 {
@@ -168,15 +171,14 @@ h1 > span {
   display: grid;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 55em) {
   body {
     text-align: left;
   }
   .container {
+    margin: 20em;
     grid-template-columns: repeat(2, 1fr);
   }
-
-
 
   h1 {
     max-width: 16ch;
@@ -190,7 +192,9 @@ h1 > span {
   }
 
   .intro > p {
-    margin : 0;
+    margin: 0;
+    margin-right: auto;
+    max-width: 40ch;
   }
 
   .logo {
@@ -204,9 +208,7 @@ h1 > span {
   .logo::before {
     border-radius: 0 1rem 1rem 0;
   }
-  img {
-    visibility: hidden;
-  }
+  
   .stats {
     margin: 0 4rem;
     margin-bottom: 5rem;
